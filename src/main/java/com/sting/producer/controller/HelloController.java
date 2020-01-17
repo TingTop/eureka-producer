@@ -13,6 +13,7 @@ public class HelloController {
 
     @GetMapping("/")
     public String hello(@RequestParam String name){
+        System.out.println("service used~~~");
         return "hello " + name + " 现在时间：" + new Date();
     }
 }
